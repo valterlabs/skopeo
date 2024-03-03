@@ -7,7 +7,6 @@ require (
 	github.com/containers/common v0.57.4
 	github.com/containers/image/v5 v5.29.3-0.20240301163503-faa4f4fd0e4f
 	github.com/containers/ocicrypt v1.1.9
-	github.com/containers/skopeo v1.14.2
 	github.com/containers/storage v1.52.1-0.20240301111729-226cffb1c4d2
 	github.com/docker/distribution v2.8.3+incompatible
 	github.com/opencontainers/go-digest v1.0.0
@@ -44,6 +43,7 @@ require (
 	github.com/docker/docker-credential-helpers v0.8.1 // indirect
 	github.com/docker/go-connections v0.5.0 // indirect
 	github.com/docker/go-units v0.5.0 // indirect
+	github.com/dsnet/compress v0.0.2-0.20210315054119-f66993602bf5 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
 	github.com/go-jose/go-jose/v3 v3.0.2 // indirect
 	github.com/go-logr/logr v1.3.0 // indirect
@@ -96,6 +96,7 @@ require (
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/proglottis/gpgme v0.1.3 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
+	github.com/russross/blackfriday v2.0.0+incompatible // indirect
 	github.com/secure-systems-lab/go-securesystemslib v0.8.0 // indirect
 	github.com/segmentio/ksuid v1.0.4 // indirect
 	github.com/shurcooL/sanitized_anchor_name v1.0.0 // indirect
