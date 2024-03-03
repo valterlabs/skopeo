@@ -1,4 +1,4 @@
-package main
+package skopeo
 
 import (
 	"context"
@@ -123,7 +123,7 @@ func (opts *globalOptions) before(cmd *cobra.Command, args []string) error {
 	return nil
 }
 
-func main() {
+func Main() {
 	if reexec.Init() {
 		return
 	}

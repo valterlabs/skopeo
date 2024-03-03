@@ -1,4 +1,4 @@
-package main
+package skopeo
 
 import (
 	"errors"
@@ -44,6 +44,23 @@ type copyOptions struct {
 	encryptLayer             []int                     // The list of layers to encrypt
 	encryptionKeys           []string                  // Keys needed to encrypt the image
 	decryptionKeys           []string                  // Keys needed to decrypt the image
+}
+
+func SimpleCopy(src string, dest string) error {
+	global := &globalOptions{}
+	_, sharedOpts := sharedImageFlags()
+	_, deprecatedTLSVerifyOpt := deprecatedTLSVerifyFlags()
+	_, srcOpts := imageFlags(global, sharedOpts, deprecatedTLSVerifyOpt, "src-", "screds")
+	_, destOpts := imageDestFlags(global, sharedOpts, deprecatedTLSVerifyOpt, "dest-", "dcreds")
+	_, retryOpts := retryFlags()
+	opts := copyOptions{global: global,
+		deprecatedTLSVerify: deprecatedTLSVerifyOpt,
+		srcImage:            srcOpts,
+		destImage:           destOpts,
+		retryOpts:           retryOpts,
+	}
+
+	return opts.run([]string{src, dest}, os.Stdout)
 }
 
 func copyCmd(global *globalOptions) *cobra.Command {

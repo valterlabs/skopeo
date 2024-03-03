@@ -1,4 +1,4 @@
-package main
+package skopeo
 
 import (
 	"github.com/containers/image/v5/transports"

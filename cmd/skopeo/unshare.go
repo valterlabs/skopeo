@@ -1,7 +1,7 @@
 //go:build !linux
 // +build !linux
 
-package main
+package skopeo
 
 func reexecIfNecessaryForImages(_ ...string) error {
 	return nil
