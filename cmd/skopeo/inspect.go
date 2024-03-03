@@ -14,11 +14,11 @@ import (
 	"github.com/containers/image/v5/manifest"
 	"github.com/containers/image/v5/transports"
 	"github.com/containers/image/v5/types"
-	"github.com/containers/skopeo/cmd/skopeo/inspect"
 	"github.com/docker/distribution/registry/api/errcode"
 	v1 "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
+	"github.com/valterlabs/skopeo/cmd/skopeo/inspect"
 )
 
 type inspectOptions struct {

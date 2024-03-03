@@ -9,10 +9,10 @@ import (
 	commonFlag "github.com/containers/common/pkg/flag"
 	"github.com/containers/image/v5/signature"
 	"github.com/containers/image/v5/types"
-	"github.com/containers/skopeo/version"
 	"github.com/containers/storage/pkg/reexec"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
+	"github.com/valterlabs/skopeo/version"
 )
 
 // gitCommit will be the hash that the binary was built from
