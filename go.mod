@@ -1,4 +1,4 @@
-module github.com/containers/skopeo
+module github.com/valterlabs/skopeo
 
 go 1.19
 
